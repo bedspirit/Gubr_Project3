@@ -1,0 +1,34 @@
+[ScriptInputGUBR - Void Keyer.txt]
+12 - 05 - 2013
+GUBR
+[END]
+'
+' Replace the question marks (?) with the appropriate information as
+' defined below:
+'
+'     [PASSWORD]? <-- Replace ? with the password used by the GUBR screen.
+'     [USERID]? <-- Replace ? with the user ID used by the GUBR screen.
+'     [STORE]26<-- Replace the 26 with the starting column of the store.
+'     [DIV]30<-- Replace the 30 with the starting column of the division.
+'     [CARTON]32 <-- Replace the 32 with the starting column of the carton.
+'     [ITEM]16  <-- Replace the 16 with the starting column of the item.
+'     [CODE]? <-- Replace ? with OUT, D01, SHP, XDK etc as used by the GUBR screen.
+'     ## <-- Replace ## with the data specifing what is to be voided by the GUBR screen.
+'
+' The below settings are the defaults and reflect the 0271key report
+' If you use another report (or data) you will need to adjust the
+' values accordingly.
+'
+' Use as many [CODE] definitions (followed by more data) to void each
+' type of void you have.
+'
+[START]
+[PASSWORD]password
+[USERID]userID
+[STORE]20
+[DIV]25
+[CARTON]27
+[ITEM]11
+[CODE]xdk
+[CODE]shp
+[END]
